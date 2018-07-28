@@ -1,0 +1,28 @@
+{
+  "name": "entrance-task-2-2",
+  "version": "1.0.0",
+  "description": "layout for Yandex.Home",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-clean-css": "^3.9.4",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/astatsegre/entrance-task-2-2.git"
+  },
+  "author": "Novitckas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/astatsegre/entrance-task-2-2/issues"
+  },
+  "homepage": "https://github.com/astatsegre/entrance-task-2-2#readme"
+}
