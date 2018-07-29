@@ -1,0 +1,54 @@
+html, body {
+  height: 100%;
+}
+
+.layout {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 110px auto 64px;
+  grid-template-areas:  "h h"
+                        "c c"
+                        "f f";
+}
+.header {
+  grid-area: h;
+}
+
+.content{
+  grid-area: c;
+  display: grid;
+  grid-template-rows: 282px 141px 141px;
+  grid-template-areas:  "m"
+                        "s"
+                        "g";
+  gap: 24px;
+
+  .main {
+    grid-area: m;
+  }
+  .scenarios {
+    grid-area: s;
+  }
+  .gadgets {
+    grid-area: g;
+  }
+  
+  @media (min-width: $screen-m) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-areas:  "m s"
+                          "m s"
+                          "m s"
+                          "m s"
+                          "m s"
+                          "g g"
+                          "g g";
+  }
+  gap: 26px
+}
+
+.footer {
+  grid-area: f;
+}
+
