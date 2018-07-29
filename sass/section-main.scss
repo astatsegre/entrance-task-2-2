@@ -1,0 +1,33 @@
+.section-main {
+  &__header {
+    display: none;
+    @media (min-width: $screen-m) {
+      display: block;
+    }
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:  "info info"
+                          "card card";
+    background-image: url("../images/png/main-background1x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 25px;
+
+    @media (min-width: $screen-m) {
+      grid-template-areas:  "info card"
+                            ". card";
+    }
+  }
+
+  &__info {
+    grid-area: info;
+  }
+
+  &__cards {
+    grid-area: card;
+  }
+}

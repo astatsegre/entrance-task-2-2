@@ -28,7 +28,7 @@ body {
                         "g";
   gap: 24px;
 
-  .main {
+  .section-main {
     grid-area: m;
   }
   .scenarios {
@@ -48,11 +48,16 @@ body {
                           "m s"
                           "g g"
                           "g g";
+    gap: 26px
   }
-  gap: 26px
 }
 
 .footer {
   grid-area: f;
+}
+
+.text-header {
+  font-size: $font-size-h2;
+  color: $text-color-main;
 }
 

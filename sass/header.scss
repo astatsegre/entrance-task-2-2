@@ -29,9 +29,9 @@
     }
 
     &__link {
-      font-family: Arial-BoldMT, sans-serif;
+      font-family: $font-family;
       text-decoration: none;
-      color: #333333;
+      color: $text-color-main;
       opacity: 0.6;
       font-size: 16px;
       line-height: 20px;
