@@ -1,0 +1,31 @@
+.main-info {
+  margin: 20px;
+
+  &__header {
+    font-size: $font-size-m;
+    margin: 2px 0;
+  }
+
+  &__state-message {
+    font-size: $font-size-xs;
+    font-family: $font-family;
+    color: $text-color-main;
+  }
+}
+
+.temperature-message {
+  display: inline-block;
+  margin: 20px 20px 0 0 ;
+
+  &__header {
+    font-family: $font-family;
+    font-size: $font-size-xs;
+    color: $text-color-alternative;
+  }
+
+  &__content {
+    font-family: $font-family-bold;
+    font-size: $font-size-l;
+    color: $text-color-main;
+  }
+}

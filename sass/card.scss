@@ -1,4 +1,21 @@
 .card {
   border-radius: 25px;
   background-color: $background-color;
+  min-width: 200px;
+
+  &--tall {
+    height: 120px;
+  }
+
+  &__header {
+    font-family: $font-family-bold;
+    font-size: $font-size-s;
+    color: $text-color-main;
+  }
+
+  &__message {
+    font-family: $font-family;
+    font-style: $font-size-xs;
+    color: $text-color-alternative;
+  }
 }
