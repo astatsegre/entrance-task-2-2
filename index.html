@@ -8,18 +8,22 @@
 </head>
 <body>
 <div class="layout">
-  <header class="header" style="background-color: red; border: 1px solid black">
-    header
-   <!-- <div>
-      <a href="https://yandex.ru" title="Яндекс Дом"></a>
-      <nav>
-        <ul>
-          <li>Сводка</li>
-          <li>Устройства</li>
-          <li>Сценарии</li>
-        </ul>
-      </nav>
-    </div>-->
+  <header class="header">
+    <a class="header-logo" href="https://yandex.ru" title="Яндекс Дом"></a>
+    <nav>
+      <ul class="main-nav">
+        <li class="main-nav__item main-nav__item">
+          <a class="main-nav__link main-nav__link--active" href="#">Сводка</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">Устройства</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">Сценарии</a>
+        </li>
+      </ul>
+    </nav>
+    <i class="main-nav-open-btn">i</i>
   </header>
   <main class="content">
     <section class="main" style="background-color: yellow; border: 1px solid black">
