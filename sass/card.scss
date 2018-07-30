@@ -2,9 +2,16 @@
   border-radius: 25px;
   background-color: $background-color;
   min-width: 200px;
+  position: relative;
 
   &--tall {
     height: 120px;
+  }
+
+  &__info {
+    position: absolute;
+    bottom: 0;
+    padding: 0 15px 15px;
   }
 
   &__header {
@@ -15,7 +22,7 @@
 
   &__message {
     font-family: $font-family;
-    font-style: $font-size-xs;
+    font-size: $font-size-xs;
     color: $text-color-alternative;
   }
 }

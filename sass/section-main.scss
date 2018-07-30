@@ -27,8 +27,23 @@
     grid-area: info;
   }
 
-  &__cards {
-    grid-area: card;
-    display: flex;
+  &__container {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    max-height: 150px;
+    padding-bottom: 50px;
   }
+
+  &__container-for-scroll-hide {
+    grid-area: card;
+    max-height: 150px;overflow-y: hidden;
+  }
+
+  &__cards {
+    display: flex;
+    box-sizing: content-box;
+    padding-bottom: 50px;
+  }
+
+
 }
