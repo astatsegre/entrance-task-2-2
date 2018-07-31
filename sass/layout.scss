@@ -26,12 +26,11 @@ body {
 .content{
   grid-area: c;
   display: grid;
-  grid-template-rows: 282px 141px 141px;
+  grid-template-rows: 302px 161px 161px;
   grid-template-columns: 1fr;
   grid-template-areas:  "m"
                         "s"
                         "g";
-  gap: 24px;
 
   .section-main {
     grid-area: m;
@@ -43,6 +42,7 @@ body {
   }
   .gadgets {
     grid-area: g;
+    max-width: 100vw;
   }
   
   @media (min-width: $screen-m) {
