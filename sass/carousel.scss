@@ -23,7 +23,7 @@
         max-height: unset;
         padding-bottom: 0;
         overflow-x: hidden;
-        overflow-y: scroll;
+        overflow-y: hidden;
       }
     }
   }
@@ -31,6 +31,7 @@
   &--tall {
     @media (min-width: $screen-m) {
       max-height: unset;
+      height: 100%;
     }
   }
 
