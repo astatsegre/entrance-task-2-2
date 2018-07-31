@@ -1,11 +1,27 @@
 .card {
-  border-radius: 25px;
+  border-radius: 20px;
   background-color: $background-color;
   min-width: 200px;
   position: relative;
+  margin-right: 20px;
 
   &--tall {
     height: 120px;
+
+    @media (min-width: $screen-m) {
+      margin: 0 20px 15px 20px;
+      &:first-child {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  &--scroll-btn {
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    height: 120px;
+    background-color: red;
   }
 
   &__info {

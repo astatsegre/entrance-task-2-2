@@ -1,0 +1,40 @@
+.carousel {
+  max-height: 150px;
+  overflow-y: hidden;
+
+  &__content {
+    display: flex;
+    box-sizing: content-box;
+    padding-left: 20px;
+    padding-top: 5px;
+
+    @media (min-width: $screen-m) {
+      flex-direction: column;
+    }
+  }
+  &__container {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    max-height: 150px;
+    padding-bottom: 50px;
+
+    &--tall {
+      @media (min-width: $screen-m) {
+        max-height: unset;
+        padding-bottom: 0;
+        overflow-x: hidden;
+        overflow-y: scroll;
+      }
+    }
+  }
+
+  &--tall {
+    @media (min-width: $screen-m) {
+      max-height: unset;
+    }
+  }
+
+
+}
+
+
