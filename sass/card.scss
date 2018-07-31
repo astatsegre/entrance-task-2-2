@@ -9,7 +9,7 @@
     height: 120px;
 
     @media (min-width: $screen-m) {
-      margin: 0 20px 15px 20px;
+      margin: 0 20px 15px 0;
       &:first-child {
         margin-top: 20px;
       }

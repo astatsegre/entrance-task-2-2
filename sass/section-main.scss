@@ -8,10 +8,10 @@
 
   &__content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas:  "info info"
-                          "card card";
+    grid-template-areas:  "info info info"
+                          "card card card";
     background-image: url("../images/png/main-background1x.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -19,8 +19,8 @@
 
     @media (min-width: $screen-m) {
       height: 330px;
-      grid-template-areas:  "info card"
-                            ". card";
+      grid-template-areas:  "info info card"
+                            ". . card";
     }
   }
 
