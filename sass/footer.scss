@@ -1,0 +1,18 @@
+.footer-navigation{
+  @include clear-ul();
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  &__item {
+    font-size: $font-size-xs;
+    font-family: $font-family;
+    color: $text-color-alternative;
+    padding-bottom: 5px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $text-color-alternative;
+  }
+}
