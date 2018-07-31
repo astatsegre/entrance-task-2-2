@@ -5,11 +5,18 @@
     justify-content: space-between;
     align-items: center;
     margin: 0 20px;
+
+    @media (min-width: $screen-m) {
+      margin: 0;
+    }
   }
 
   &__content {
-    width: 100%;
+
+    @media (min-width: $screen-m) {
+      width: 100%;
+      max-height: 330px;
+      max-width: calc(50vw - 65px);
+    }
   }
-
-
 }

@@ -1,0 +1,9 @@
+.carousel-box {
+  display: none;
+  height: 100%;
+  @media (min-width: $screen-m) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+}

@@ -18,6 +18,20 @@
     }
   }
 
+  &--for-box {
+    margin: 0 15px 15px 0;
+    flex: 1 1 180px;
+    min-width: unset;
+  }
+
+  &--blank {
+    visibility: hidden;
+    margin: 0 15px 15px 0;
+    flex: 1 1 180px;
+    min-width: unset;
+
+  }
+
   &--scroll-btn {
     display: none;
     position: absolute;

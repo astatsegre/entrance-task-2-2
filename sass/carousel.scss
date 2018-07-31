@@ -36,7 +36,11 @@
     }
   }
 
-
+  &--only-mobile {
+    @media (min-width: $screen-m) {
+      display: none;
+    }
+  }
 }
 
 
