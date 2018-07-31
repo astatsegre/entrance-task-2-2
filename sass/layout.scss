@@ -12,7 +12,7 @@ body {
   grid-template-columns: 20px 1fr 1fr 20px;
   grid-template-rows: 55px auto 64px;
   grid-template-areas:  "h h h h"
-                        ". c c ."
+                        "c c c c"
                         ". f f .";
 
   @media (min-width: $screen-m) {
@@ -27,6 +27,7 @@ body {
   grid-area: c;
   display: grid;
   grid-template-rows: 282px 141px 141px;
+  grid-template-columns: 1fr;
   grid-template-areas:  "m"
                         "s"
                         "g";
@@ -34,9 +35,11 @@ body {
 
   .section-main {
     grid-area: m;
+    margin: 0 20px;
   }
   .scenarios {
     grid-area: s;
+    max-width: 100vw;
   }
   .gadgets {
     grid-area: g;

@@ -1,5 +1,5 @@
 .carousel {
-  max-height: 150px;
+  max-height: 120px;
   overflow-y: hidden;
 
   &__content {
@@ -29,6 +29,7 @@
   }
 
   &--tall {
+    max-height: 150px;
     @media (min-width: $screen-m) {
       max-height: unset;
       height: 100%;

@@ -2,8 +2,10 @@
   border-radius: 20px;
   background-color: $background-color;
   min-width: 200px;
+  max-width: 200px;
   position: relative;
   margin-right: 20px;
+  height: 100px;
 
   &--tall {
     height: 120px;
