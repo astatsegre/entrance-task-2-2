@@ -4,6 +4,10 @@
     display: flex;
     align-items: center;
     margin: 0 20px;
+
+    @media (min-width: $screen-m) {
+      margin-left: 40px;
+    }
   }
 
   &__h2 {

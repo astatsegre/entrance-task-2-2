@@ -2,13 +2,24 @@
   @include clear-ul();
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
+  height: 100%;
 
-  &__item {
+  @media (min-width: $screen-m) {
+    justify-content: flex-start;
+  }
+
+    &__item {
     font-size: $font-size-xxs;
     font-family: $font-family;
     color: $text-color-alternative;
     padding-bottom: 5px;
+    margin-right: 10px;
+
+      &--copyright {
+        margin-left: auto;
+      }
   }
 
   &__link {
