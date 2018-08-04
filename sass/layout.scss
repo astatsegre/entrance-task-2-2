@@ -27,7 +27,7 @@ body {
 .content{
   grid-area: c;
   display: grid;
-  grid-template-rows: 302px 161px 161px;
+  grid-template-rows: 302px 161px 191px;
   grid-template-columns: 1fr;
   grid-template-areas:  "m"
                         "s"

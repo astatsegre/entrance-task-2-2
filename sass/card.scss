@@ -9,7 +9,9 @@
 
   &--tall {
     height: 120px;
+  }
 
+  &--for-vertical {
     @media (min-width: $screen-m) {
       margin: 0 20px 15px 0;
       &:first-child {
