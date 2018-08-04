@@ -35,17 +35,7 @@
   }
 
   &--scroll-btn {
-    display: none;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    background-color: red;
-    height: 40px;
-    border-radius: 20px 20px 0 0;
-
-    @media (min-width: $screen-m) {
-      display: block;
-    }
+    // сюда стили с двойной стрелкой вверх. Класс будет убираться, после начала скролла
   }
 
   &__info {

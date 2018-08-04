@@ -33,4 +33,11 @@
   &__content {
     width: 100%;
   }
+
+  &__tag-filter {
+    display: block;
+      @media (min-width: $screen-m) {
+        display: none;
+      }
+    }
 }
