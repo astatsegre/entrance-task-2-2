@@ -8,7 +8,7 @@
 
   &__content {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 220px;
     grid-template-rows: 1fr 1fr;
     grid-template-areas:  "info info info"
                           "card card card";
