@@ -17,6 +17,8 @@
       @media (min-width: $screen-m) {
         flex-direction: column;
         touch-action: pan-y;
+        padding-left: 0;
+        width: 200px;
       }
     }
   }
@@ -24,14 +26,17 @@
     overflow-x: scroll;
     overflow-y: hidden;
     max-height: 150px;
-    padding-bottom: 50px;
+    padding-bottom: 55px;
 
     &--tall {
       @media (min-width: $screen-m) {
+        height: 100%;
         max-height: unset;
         padding-bottom: 0;
         overflow-x: hidden;
-        overflow-y: hidden;
+        overflow-y: scroll;
+        width: 200px;
+        padding-right: 50px;
       }
     }
   }
@@ -41,6 +46,8 @@
     @media (min-width: $screen-m) {
       max-height: unset;
       height: 100%;
+      width: 200px;
+      overflow-x: hidden;
     }
   }
 
