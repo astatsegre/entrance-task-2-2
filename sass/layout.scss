@@ -17,6 +17,7 @@ body {
 
   @media (min-width: $screen-m) {
     grid-template-columns: 40px 1fr 1fr 40px;
+    grid-template-rows: 92px auto 64px;
   }
 }
 .header {
@@ -35,25 +36,31 @@ body {
   .section-main {
     grid-area: m;
     margin: 0 20px;
-  }
+      @media (min-width: $screen-m) {
+        margin: 29px 0 0 40px;
+      }
+    }
   .scenarios {
     grid-area: s;
     max-width: 100vw;
+
+    @media (min-width: $screen-m) {
+      margin: 29px 0 0 0;
+    }
   }
   .gadgets {
     grid-area: g;
     max-width: 100vw;
+
+    @media (min-width: $screen-m) {
+      margin: 29px 0 0 0;
+    }
   }
   
   @media (min-width: $screen-m) {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(7, 1fr);
+    grid-template-rows: 385px 195px;
     grid-template-areas:  "m s"
-                          "m s"
-                          "m s"
-                          "m s"
-                          "m s"
-                          "g g"
                           "g g";
     gap: 26px
   }

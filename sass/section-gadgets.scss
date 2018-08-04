@@ -2,9 +2,12 @@
 
   &__header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     margin: 0 20px;
+  }
+
+  &__h2 {
+    margin-right: 15px;
   }
 
   &__filter {
@@ -17,6 +20,10 @@
     &--mobile {
       display: block;
     }
+  }
+
+  &__scroll-btns {
+    margin-left: auto;
   }
 
   &__content {

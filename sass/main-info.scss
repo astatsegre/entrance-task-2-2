@@ -15,7 +15,7 @@
   }
 
   &__state-message {
-    font-size: $font-size-xs;
+    font-size: $font-size-xxs;
     font-family: $font-family;
     color: $text-color-main;
 
@@ -31,7 +31,7 @@
 
   &__header {
     font-family: $font-family;
-    font-size: $font-size-xs;
+    font-size: $font-size-xxs;
     color: $text-color-alternative;
 
     @media (min-width: $screen-m) {

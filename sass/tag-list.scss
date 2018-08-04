@@ -1,0 +1,8 @@
+.tag-list {
+  @include clear-ul();
+
+  &__item {
+    display: inline-block;
+    margin-right: 10px;
+  }
+}
