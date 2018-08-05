@@ -38,7 +38,7 @@ body {
     grid-template-rows: 385px 195px;
     grid-template-areas:  "m s"
                           "g g";
-    gap: 26px
+    grid-gap: 26px
   }
 
   .section-main {

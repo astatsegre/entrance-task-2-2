@@ -15,7 +15,17 @@
                         ". . .";
   grid-gap: 15px;
 
-  &--hidden {
+  @media (min-width: $screen-m) {
+    grid-template-columns: 1fr 315px 315px 1fr;
+    grid-template-rows: 100px 345px 60px 1fr;
+    grid-template-areas:  ". . . ."
+                          ". w w ."
+                          ". a c ."
+                          ". . . .";
+    grid-gap: 20px;
+  }
+
+    &--hidden {
     display: none;
   }
   &__window {
