@@ -25,9 +25,14 @@
     grid-gap: 20px;
   }
 
-    &--hidden {
+  &--none {
     display: none;
   }
+
+  &--hidden {
+    visibility: hidden;
+  }
+
   &__window {
     grid-area: w;
     background-color: white;
