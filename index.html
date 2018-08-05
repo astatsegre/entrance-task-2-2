@@ -9,7 +9,7 @@
 <body>
 <div class="layout">
   <header class="header">
-    <a class="header-logo" href="https://yandex.ru" title="Яндекс Дом"></a>
+    <a class="svg-logo svg-logo-dims header-logo" href="https://yandex.ru" title="Яндекс Дом"></a>
     <nav>
       <ul class="main-nav">
         <li class="main-nav__item">
@@ -85,7 +85,9 @@
           <div class="carousel__container">
             <div class="carousel__content">
               <div class="card">
-                <span class="card__icon"></span>
+                <span class="card__icon">
+                  <object width="20" height="20" type="image/svg+xml" data="./images/svg/sun.svg">werwer</object>
+                </span>
                 <div class="card__info">
                   <div class="card__header">Выключить весь свет в доме и во дворе</div>
                 </div>
@@ -120,7 +122,11 @@
         </div>
         <div class="carousel-box">
           <div class="card card--for-box">
-            <span class="card__icon"></span>
+            <span class="card__icon">
+              <svg class="active">
+                <use href="images/svg/sun.svg#sun-id"></use>
+              </svg>
+            </span>
             <div class="card__info">
               <div class="card__header">Выключить весь свет в доме и во дворе</div>
             </div>

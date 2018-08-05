@@ -44,6 +44,12 @@
     padding: 0 15px 15px;
   }
 
+  &__icon {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+  }
+
   &__header {
     font-family: $font-family-bold;
     font-size: $font-size-s;
