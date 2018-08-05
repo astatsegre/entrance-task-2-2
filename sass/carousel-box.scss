@@ -1,9 +1,29 @@
 .carousel-box {
   display: none;
-  height: 100%;
+  width: calc(50vw - 10px);
+  height: 330px;
+  overflow-y: hidden;
+
   @media (min-width: $screen-m) {
+    display: block;
+  }
+
+  &__item {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
+  }
+  &__item-container {
+    display: inline-block;
+    width: calc(50vw - 10px);
+  }
+  &__content {
+    max-height: 330px;
+    width: max-content;
+  }
+  &__container {
+    width: calc(50vw - 10px);
+    overflow-x: scroll;
+    padding-bottom: 50px;
   }
 }

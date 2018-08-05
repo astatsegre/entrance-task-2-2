@@ -24,6 +24,15 @@
     margin: 0 15px 15px 0;
     flex: 1 1 180px;
     min-width: unset;
+    max-width: 450px;
+
+    &:nth-child(3n) {
+      margin-right: 40px;
+    }
+
+    @media (min-width: $screen-l) {
+      flex-basis: 230px;
+    }
   }
 
   &--blank {
