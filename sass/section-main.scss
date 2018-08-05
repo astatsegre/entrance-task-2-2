@@ -15,7 +15,7 @@
     background-image: url("../images/png/main-background1x.png");
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 20px;
+    border-radius: $border-radius;
     position: relative;
 
     @media (min-width: $screen-m) {

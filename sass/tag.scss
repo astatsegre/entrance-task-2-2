@@ -4,7 +4,7 @@
   cursor: pointer;
   font-family: $font-family-bold;
   font-size: $font-size-xs;
-  border-radius: 20px;
+  border-radius: $border-radius;
   
   &--active {
     background-color: $color-accent;

@@ -5,9 +5,10 @@
   <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
   <title>Яндекс Дом</title>
   <link rel="stylesheet" href="./css/style.css">
+  <script src="js/index.js"></script>
 </head>
 <body>
-<div class="layout">
+<div id="js-layout" class="layout">
   <header class="header">
     <a class="svg-logo svg-logo-dims header-logo" href="https://yandex.ru" title="Яндекс Дом"></a>
     <nav>
@@ -347,7 +348,7 @@
         <div class="carousel">
           <div class="carousel__container">
             <div class="carousel__content">
-              <div class="card card--tall">
+              <div class="card card--tall" onclick="toggleModal()">
                 <span class="card__icon svg-sun-active svg-sun-active-dims"></span>
                 <div class="card__info">
                   <div class="card__header">Xiaomi Yeelight LED Smart Bulb</div>
@@ -419,6 +420,11 @@
       <li class="footer-navigation__item footer-navigation__item--copyright">© 2001–2017  ООО «Яндекс»</li>
     </ul>
   </footer>
+</div>
+<div id="js-modal" class="modal modal--hidden">
+  <div class="modal__window"></div>
+  <button onclick="toggleModal()" class="modal__btn modal__btn--accent">Применить</button>
+  <button onclick="toggleModal()" class="modal__btn">Закрыть</button>
 </div>
 </body>
 </html>
