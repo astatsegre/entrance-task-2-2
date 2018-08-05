@@ -421,10 +421,10 @@
     </ul>
   </footer>
 </div>
-<div id="js-modal" class="modal modal--none">
-  <div id="js-modal-window" class="modal__window"> bla bla bla</div>
-  <button onclick="toggleModal()" class="modal__btn modal__btn--accent">Применить</button>
-  <button onclick="toggleModal()" class="modal__btn">Закрыть</button>
-</div>
+<div id="js-overlay"></div>
+  <div id="js-modal-window" class="modal--hidden"> bla bla bla</div>
+  <button id="js-modal-accept" onclick="toggleModal()" class="modal__btn modal__btn--none  modal__btn--accent">Применить</button>
+  <button id="js-modal-cancel" onclick="toggleModal()" class="modal__btn modal__btn--none">Закрыть</button>
+
 </body>
 </html>

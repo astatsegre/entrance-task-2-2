@@ -41,7 +41,11 @@
     margin: 0 15px 15px 0;
     flex: 1 1 180px;
     min-width: unset;
+  }
 
+  &--animation {
+    transition-property: background-color, left, top, height, width;
+    transition-duration: 3s, 5s;
   }
 
   &--scroll-btn {

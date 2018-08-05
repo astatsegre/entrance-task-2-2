@@ -3,3 +3,9 @@
   margin: 0;
   padding: 0;
 }
+
+@mixin animation($property) {
+  transition-property: $property;
+  transition-duration: 400ms;
+  transition-timing-function: cubic-bezier(.2,.99,.5,1);
+}
