@@ -2,7 +2,6 @@
   border-radius: $border-radius;
   background-color: $background-color;
   min-width: 200px;
-  max-width: 200px;
   position: relative;
   margin-right: 20px;
   height: 100px;
@@ -74,5 +73,14 @@
     font-family: $font-family;
     font-size: $font-size-xxs;
     color: $text-color-alternative;
+  }
+
+  &__for-animation {
+    @include animation('background-color left top height width');
+    width: 200px;
+    height: 120px;
+    background-color: $background-color;
+    position: fixed;
+    z-index: 9999;
   }
 }

@@ -5,7 +5,7 @@ window.onload = function () {
 function openModal(event, id) {
   let {accept, cancel, cardForAnimation, cardLeft, cardTop, layout, modal, overlay} = varsFactory(id);
 
-  cardForAnimation.classList.add('anim-card');
+  cardForAnimation.classList.add('card__for-animation');
   cardForAnimation.style.cssText = `top: ${cardTop}; left: ${cardLeft}`;
   document.body.appendChild(cardForAnimation);
 
