@@ -1,0 +1,19 @@
+.round-slider {
+  width: 178px;
+  height: 178px;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -89px;
+  margin-left: -89px;
+  text-align: center;
+
+  &__temperature {
+    display: inline-block;
+    margin-top: 50px;
+    font-family: $font-family-bold;
+    font-size: $font-size-xxxl;
+  }
+}

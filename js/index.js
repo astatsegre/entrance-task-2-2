@@ -1,7 +1,4 @@
-window.onload = function () {
-
-};
-
+'use strict';
 function openModal(event, id) {
   let {accept, cancel, cardForAnimation, cardLeft, cardTop, layout, modal, overlay} = varsFactory(id);
   modal.classList.add('modal--hidden');
