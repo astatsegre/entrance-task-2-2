@@ -4,24 +4,29 @@ window.onload = function () {
 
 function openModal(event, id) {
   let {accept, cancel, cardForAnimation, cardLeft, cardTop, layout, modal, overlay} = varsFactory(id);
-
+  modal.classList.add('modal--hidden');
+  modal.classList.remove('modal--none');
   cardForAnimation.classList.add('card__for-animation');
   cardForAnimation.style.cssText = `top: ${cardTop}; left: ${cardLeft}`;
   document.body.appendChild(cardForAnimation);
 
   requestAnimationFrame(function () {
-    cardForAnimation.style.cssText = `top: 20px; left: 20px`;
+    cardForAnimation.style.cssText = `top: ${modal.getBoundingClientRect().top}px; left: ${modal.getBoundingClientRect().left}px`;
     cardForAnimation.classList.add('modal');
     overlay.classList.add('overlay');
     layout.classList.add('gaussian')
   });
 
   setTimeout(function () {
+    modal.classList.remove('modal--hidden');
     accept.classList.remove('modal__btn--none');
     cancel.classList.remove('modal__btn--none');
-    modal.classList.remove('modal--none');
+  }, 400);
+
+  //иначе иногда моргает
+  setTimeout(function () {
     cardForAnimation.remove()
-  }, 400)
+  }, 450)
 }
 
 function closeModal(event, id) {

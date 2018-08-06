@@ -9,7 +9,14 @@
   border-radius: $border-radius;
   z-index: 99999;
 
-  &--none {
+  @media (min-width: $screen-s) {
+    top: 100px;
+    height: 343px;
+    width: 630px;
+    left: calc(50% - 315px);
+  }
+
+    &--none {
     display: none;
   }
 
@@ -29,9 +36,18 @@
     border: none;
     font-size: $font-size-m;
     font-family: $font-family-bold;
-    &--accent {
+
+    @media (min-width: $screen-s) {
+      top: 464px;
+      left: calc(50% + 8px);
+      width: 307px;
+    }
+      &--accent {
       bottom: 95px;
       background-color: $color-accent;
+        @media (min-width: $screen-s) {
+          left: calc(50% - 315px);
+        }
     }
     &--none {
       display: none;
