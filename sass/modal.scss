@@ -65,6 +65,7 @@
 }
 
 .modal {
+  @include animation('background-color left top height width');
   position: fixed;
   top: 20px;
   left: 20px;
@@ -72,6 +73,7 @@
   width: calc(100vw - 40px);
   background-color: white;
   border-radius: $border-radius;
+  z-index: 99999;
 
   &--none {
     display: none;
