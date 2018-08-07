@@ -11,4 +11,10 @@
     background-color: $color-accent;
     cursor: default;
   }
+
+  &__icon {
+    display: inline-block;
+    vertical-align: bottom;
+    margin-left: 3px;
+  }
 }

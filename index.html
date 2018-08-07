@@ -39,7 +39,10 @@
           </div>
           <div class="temperature-message">
             <span class="temperature-message__header">За окном</span>
-            <div class="temperature-message__content">+19</div>
+            <div class="temperature-message__content">
+              <span>+19</span>
+              <div class="svg-cloud-drizzle svg-cloud-drizzle-dims temperature-message__icon"></div>
+            </div>
           </div>
         </div>
         <div class="section-main__carousel">
@@ -338,7 +341,10 @@
         ><li class="tag-list__item tag">Лампочки</li
         ><li class="tag-list__item tag">Камеры</li>
         </ul>
-        <div onclick="toggleSelect(event, '1')" class="section-gadgets__tag-filter tag tag--active">Все</div>
+        <div onclick="toggleSelect(event, '1')" class="section-gadgets__tag-filter tag tag--active">
+          Все
+          <i class="svg-arrow-down svg-arrow-down-dims tag__icon"></i>
+        </div>
         <div class="section-gadgets__scroll-btns horizontal-scroll-btns">
           <button> < </button>
           <button> > </button>
@@ -516,7 +522,7 @@
 </div>
 
 <div id="js-select-2" class="mobile-select mobile-select--none">
-  <div onclick="toggleSelect(event, '2')" class="mobile-select__close svg-burger svg-burger-dims"></div>
+  <div onclick="toggleSelect(event, '2')" class="mobile-select__close svg-delete svg-delete-dims"></div>
   <ul class="mobile-select__content">
     <li class="mobile-select__item mobile-select__item--header">Меню</li>
     <li class="mobile-select__item mobile-select__item--active">Сводка</li>

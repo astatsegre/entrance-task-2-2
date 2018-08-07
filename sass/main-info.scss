@@ -43,9 +43,18 @@
     font-family: $font-family-bold;
     font-size: $font-size-l;
     color: $text-color-main;
+    position: relative;
 
     @media (min-width: $screen-m) {
       font-size: $font-size-xxl;
+    }
+  }
+
+  &__icon {
+    display: inline-block;
+    vertical-align: bottom;
+    @media (min-width: $screen-m) {
+      vertical-align: baseline;
     }
   }
 }
