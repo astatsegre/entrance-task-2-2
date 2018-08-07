@@ -4,4 +4,14 @@
   @media (min-width: $screen-m) {
     display: block;
   }
+
+  &__item {
+    border: none;
+    margin-left: 15px;
+    padding-left: 5px; //TODO: убрать, когда починишь сборку СВГ. Без этого видно соседнюю иконку
+
+    &--rotated {
+      transform: rotate(180deg);
+    }
+  }
 }

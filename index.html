@@ -80,8 +80,8 @@
       <div class="section-scenarios__header">
         <h2 class="text-header">Избранные сценарии</h2>
         <div class="horizontal-scroll-btns">
-          <button> < </button>
-          <button> > </button>
+          <button class="horizontal-scroll-btns__item svg-arrow svg-arrow-dims"></button>
+          <button class="horizontal-scroll-btns__item horizontal-scroll-btns__item--rotated svg-arrow-active svg-arrow-active-dims"></button>
         </div>
       </div>
       <div class="section-scenarios__content">
@@ -346,8 +346,8 @@
           <i class="svg-arrow-down svg-arrow-down-dims tag__icon"></i>
         </div>
         <div class="section-gadgets__scroll-btns horizontal-scroll-btns">
-          <button> < </button>
-          <button> > </button>
+          <button class="horizontal-scroll-btns__item svg-arrow svg-arrow-dims"></button>
+          <button class="horizontal-scroll-btns__item horizontal-scroll-btns__item--rotated svg-arrow-active svg-arrow-active-dims"></button>
         </div>
       </div>
       <div>
@@ -510,7 +510,7 @@
 <button id="js-modal-cancel-3" onclick="closeModal(event, '3')" class="modal__btn modal__btn--none">Закрыть</button>
 
 <div id="js-select-1" class="mobile-select mobile-select--none">
-  <div onclick="toggleSelect(event, '1')" class="mobile-select__close svg-burger svg-burger-dims"></div>
+  <div onclick="toggleSelect(event, '1')" class="mobile-select__close svg-delete svg-delete-dims"></div>
   <ul class="mobile-select__content">
     <li class="mobile-select__item mobile-select__item--header">Избранные устройства</li>
     <li class="mobile-select__item mobile-select__item--active">Все</li>
