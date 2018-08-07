@@ -6,11 +6,16 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-top: -89px;
+  margin-top: -55px;
   margin-left: -89px;
   text-align: center;
 
-  &__temperature {
+  @media (min-width: $screen-s) {
+    top: 120px;
+    margin-top: 0;
+  }
+
+    &__temperature {
     display: inline-block;
     margin-top: 50px;
     font-family: $font-family-bold;
