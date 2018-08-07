@@ -20,9 +20,9 @@
   }
 
   &--light {
-    background: linear-gradient(#FFB100, #FFFFE88C);
+    background: linear-gradient(#FFB100, #FFEC85);
     @media (min-width: $screen-s) {
-      background: linear-gradient(-90deg, #FFB100, #FFFFE88C);
+      background: linear-gradient(-90deg, #FFB100, #FFEC85);
     }
   }
 

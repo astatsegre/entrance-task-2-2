@@ -338,7 +338,7 @@
         ><li class="tag-list__item tag">Лампочки</li
         ><li class="tag-list__item tag">Камеры</li>
         </ul>
-        <div class="section-gadgets__tag-filter tag tag--active">Все</div>
+        <div onclick="toggleSelect(event, '1')" class="section-gadgets__tag-filter tag tag--active">Все</div>
         <div class="section-gadgets__scroll-btns horizontal-scroll-btns">
           <button> < </button>
           <button> > </button>
@@ -503,5 +503,16 @@
 <button id="js-modal-accept-3" onclick="closeModal(event, '3')" class="modal__btn modal__btn--none  modal__btn--accent">Применить</button>
 <button id="js-modal-cancel-3" onclick="closeModal(event, '3')" class="modal__btn modal__btn--none">Закрыть</button>
 
+<div id="js-select-1" class="mobile-select mobile-select--none">
+  <div class="mobile-select__close svg-burger svg-burger-dims"></div>
+  <ul class="mobile-select__content">
+    <li class="mobile-select__item mobile-select__item--header">Избранные устройства</li>
+    <li class="mobile-select__item mobile-select__item--active">Все</li>
+    <li onclick="toggleSelect(event, '1')" class="mobile-select__item">Кухня</li>
+    <li onclick="toggleSelect(event, '1')" class="mobile-select__item">Зал</li>
+    <li onclick="toggleSelect(event, '1')" class="mobile-select__item">Лампочки</li>
+    <li onclick="toggleSelect(event, '1')" class="mobile-select__item">Камеры</li>
+  </ul>
+</div>
 </body>
 </html>

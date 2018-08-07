@@ -4,6 +4,7 @@
     display: flex;
     align-items: center;
     margin: 0 20px;
+    position: relative;
 
     @media (min-width: $screen-m) {
       margin: 0 40px;

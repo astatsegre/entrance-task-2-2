@@ -61,3 +61,7 @@ function varsFactory(id) {
     overlay: document.getElementById('js-overlay'),
   }
 }
+
+function toggleSelect(event, id) {
+  document.getElementById(`js-select-${id}`).classList.toggle('mobile-select--none')
+}
