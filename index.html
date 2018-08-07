@@ -24,7 +24,7 @@
         </li>
       </ul>
     </nav>
-    <i class="main-nav-open-btn">i</i>
+    <i onclick="toggleSelect(event, '2')" class="main-nav-open-btn svg-burger svg-burger-dims"></i>
   </header>
   <main class="content">
     <section class="section-main">
@@ -504,7 +504,7 @@
 <button id="js-modal-cancel-3" onclick="closeModal(event, '3')" class="modal__btn modal__btn--none">Закрыть</button>
 
 <div id="js-select-1" class="mobile-select mobile-select--none">
-  <div class="mobile-select__close svg-burger svg-burger-dims"></div>
+  <div onclick="toggleSelect(event, '1')" class="mobile-select__close svg-burger svg-burger-dims"></div>
   <ul class="mobile-select__content">
     <li class="mobile-select__item mobile-select__item--header">Избранные устройства</li>
     <li class="mobile-select__item mobile-select__item--active">Все</li>
@@ -512,6 +512,16 @@
     <li onclick="toggleSelect(event, '1')" class="mobile-select__item">Зал</li>
     <li onclick="toggleSelect(event, '1')" class="mobile-select__item">Лампочки</li>
     <li onclick="toggleSelect(event, '1')" class="mobile-select__item">Камеры</li>
+  </ul>
+</div>
+
+<div id="js-select-2" class="mobile-select mobile-select--none">
+  <div onclick="toggleSelect(event, '2')" class="mobile-select__close svg-burger svg-burger-dims"></div>
+  <ul class="mobile-select__content">
+    <li class="mobile-select__item mobile-select__item--header">Меню</li>
+    <li class="mobile-select__item mobile-select__item--active">Сводка</li>
+    <li class="mobile-select__item">Устройства</li>
+    <li class="mobile-select__item">Сценарии</li>
   </ul>
 </div>
 </body>
