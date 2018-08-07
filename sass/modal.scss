@@ -19,7 +19,16 @@
     height: 343px;
     width: 630px;
     left: calc(50% - 315px);
-    padding: 25px;
+    padding: 25px 0;
+  }
+
+  &--short {
+    height: calc(100vh - 190px);
+
+    @media (min-width: $screen-s) {
+      height: 238px;
+      top: 205px;
+    }
   }
 
   &--none {
@@ -34,6 +43,10 @@
     margin: 0 20px;
     display: flex;
     justify-content: space-between;
+
+    @media (min-width: $screen-s) {
+      margin: 0 25px;
+    }
   }
 
   &__temperature {
@@ -69,8 +82,13 @@
   &__controller {
     flex-grow: 1;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @media (min-width: $screen-s) {
+      flex-direction: row;
+    }
   }
 
   &__value {
@@ -91,6 +109,10 @@
     padding-bottom: 50px;
     padding-left: 20px;
     overflow-x: scroll;
+
+    @media (min-width: $screen-s) {
+      padding-left: 25px;
+    }
   }
 
   &__filter {
@@ -115,13 +137,18 @@
       left: calc(50% + 8px);
       width: 307px;
     }
-      &--accent {
-      bottom: 95px;
-      background-color: $color-accent;
-        @media (min-width: $screen-s) {
-          left: calc(50% - 315px);
-        }
+    &--accent {
+    bottom: 95px;
+    background-color: $color-accent;
+      @media (min-width: $screen-s) {
+        left: calc(50% - 315px);
+      }
     }
+
+    &--for-short-modal {
+
+    }
+
     &--none {
       display: none;
     }

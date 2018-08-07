@@ -356,19 +356,20 @@
                 </div>
               </div>
               <div id="js-card-id-2" class="card card--tall" onclick="openModal(event, '2')">
-                <i class="card__icon svg-sun-active svg-sun-active-dims"></i>
-                <div class="card__info">
-                  <div class="card__header">Xiaomi Yeelight LED Smart Bulb</div>
-                  <div class="card__message">Включено</div>
-                </div>
-              </div>
-              <div class="card card--tall">
                 <i class="card__icon svg-temperature svg-temperature-dims"></i>
                 <div class="card__info">
                   <div class="card__header">Elgato Eve Degree Connected</div>
                   <div class="card__message">Выключено до 17:00</div>
                 </div>
               </div>
+              <div id="js-card-id-3" class="card card--tall" onclick="openModal(event, '3')">
+                <i class="card__icon svg-sun-active svg-sun-active-dims"></i>
+                <div class="card__info">
+                  <div class="card__header">Xiaomi Yeelight LED Smart Bulb</div>
+                  <div class="card__message">Включено</div>
+                </div>
+              </div>
+
               <div class="card card--tall">
                 <span class="card__icon svg-sun svg-sun-dims"></span>
                 <div class="card__info">
@@ -442,32 +443,65 @@
 <button id="js-modal-accept-1" onclick="closeModal(event, '1')" class="modal__btn modal__btn--none  modal__btn--accent">Применить</button>
 <button id="js-modal-cancel-1" onclick="closeModal(event, '1')" class="modal__btn modal__btn--none">Закрыть</button>
 
-<div id="js-modal-window-2" class="modal modal--none">
+<div id="js-modal-window-2" class="modal modal--none modal--short">
   <div class="modal__header">
     <div>
       <h3 class="modal__h3">Elgato Eve Degree Connected</h3>
       <span class="modal__status">Включено</span>
     </div>
+    <div class="modal__value">
+      <span class="modal__temperature">+23</span>
+      <i class="svg-temperature modal__temperature-logo"></i>
+    </div>
   </div>
   <div class="modal__filter-containter">
     <div class="modal__filter-content">
       <ul class="tag-list modal__filter">
-        <li class="tag-list__item tag tag--active">Все</li
-        ><li class="tag-list__item tag">Кухня</li
-      ><li class="tag-list__item tag">Зал</li
-      ><li class="tag-list__item tag">Лампочки</li
-      ><li class="tag-list__item tag">Камеры</li>
+        <li class="tag-list__item tag tag--active">Вручную</li
+        ><li class="tag-list__item tag">Холодно</li
+      ><li class="tag-list__item tag">Тепло</li>
       </ul>
     </div>
   </div>
   <div class="modal__controller">
-    <div class="round-slider">
-      <div class="round-slider__temperature">+23</div>
+    <div class="slider">
+      <div class="slider__start slider__start--temperature">-10</div>
+      <div class="slider__end slider__end--temperature">+30</div>
     </div>
   </div>
 </div>
 <button id="js-modal-accept-2" onclick="closeModal(event, '2')" class="modal__btn modal__btn--none  modal__btn--accent">Применить</button>
 <button id="js-modal-cancel-2" onclick="closeModal(event, '2')" class="modal__btn modal__btn--none">Закрыть</button>
+
+<div id="js-modal-window-3" class="modal modal--none modal--short">
+  <div class="modal__header">
+    <div>
+      <h3 class="modal__h3">Elgato Eve Degree Connected</h3>
+      <span class="modal__status">Включено</span>
+    </div>
+    <div class="modal__value">
+      <span class="modal__temperature">+23</span>
+      <i class="svg-temperature modal__temperature-logo"></i>
+    </div>
+  </div>
+  <div class="modal__filter-containter">
+    <div class="modal__filter-content">
+      <ul class="tag-list modal__filter">
+        <li class="tag-list__item tag tag--active">Вручную</li
+        ><li class="tag-list__item tag">Дневной свет</li
+      ><li class="tag-list__item tag">Вечерний свет</li>
+      </ul>
+    </div>
+  </div>
+  <div class="modal__controller">
+    <div class="slider slider--light">
+      <i class="slider__start svg-sun-white svg-sun-white-dims"></i>
+      <i class="slider__end svg-sun-white-bold svg-sun-white-bold-dims"></i>
+    </div>
+  </div>
+</div>
+<button id="js-modal-accept-3" onclick="closeModal(event, '3')" class="modal__btn modal__btn--none  modal__btn--accent">Применить</button>
+<button id="js-modal-cancel-3" onclick="closeModal(event, '3')" class="modal__btn modal__btn--none">Закрыть</button>
 
 </body>
 </html>

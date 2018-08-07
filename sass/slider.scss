@@ -1,0 +1,54 @@
+.slider {
+  height: 100%;
+  width: 60px;
+  border-radius: 35px;
+  background: linear-gradient(#FF5B00, #FFD800, #0085FF);
+  flex-grow: 1;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $screen-s) {
+    background: linear-gradient(-90deg, #FF5B00, #FFD800, #0085FF);
+    height: 60px;
+    width: 100%;
+    flex-direction: row;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  &--light {
+    background: linear-gradient(#FFB100, #FFFFE88C);
+    @media (min-width: $screen-s) {
+      background: linear-gradient(-90deg, #FFB100, #FFFFE88C);
+    }
+  }
+
+  &__start {
+    margin-bottom: 15px;
+    @media (min-width: $screen-s) {
+      margin: 0 0 0 20px;
+    }
+
+    &--temperature{
+      color: white;
+      font-family: $font-family-bold;
+      font-size: $font-size-m;
+    }
+  }
+
+  &__end {
+    margin-top: 15px;
+    @media (min-width: $screen-s) {
+      margin: 0 20px 0 0;
+    }
+
+    &--temperature{
+      color: white;
+      font-family: $font-family-bold;
+      font-size: $font-size-m;
+    }
+  }
+}

@@ -5,6 +5,7 @@
   font-family: $font-family-bold;
   font-size: $font-size-xs;
   border-radius: $border-radius;
+  white-space: nowrap;
   
   &--active {
     background-color: $color-accent;

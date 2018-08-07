@@ -1,10 +1,6 @@
 .tag-list {
   @include clear-ul();
 
-  &--max-content {
-    width: max-content;
-  }
-
   &__item {
     display: inline-block;
     margin-right: 10px;
