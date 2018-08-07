@@ -80,11 +80,11 @@
       <div class="section-scenarios__header">
         <h2 class="text-header">Избранные сценарии</h2>
         <div class="horizontal-scroll-btns">
-          <button class="horizontal-scroll-btns__item svg-arrow svg-arrow-dims"></button>
+          <button onclick="scrollByBtn(event, 'id-carousel-box__container', 'id-item')" class="horizontal-scroll-btns__item svg-arrow svg-arrow-dims"></button>
           <button class="horizontal-scroll-btns__item horizontal-scroll-btns__item--rotated svg-arrow-active svg-arrow-active-dims"></button>
         </div>
       </div>
-      <div class="section-scenarios__content">
+      <div class="section-scenarios__content" id="id-section-scenarios">
         <div class="carousel carousel--only-mobile">
           <div class="carousel__container">
             <div class="carousel__content">
@@ -203,10 +203,10 @@
           </div>
         </div>
         <div class="carousel-box">
-          <div class="carousel-box__container">
+          <div class="carousel-box__container" id="id-carousel-box__container">
             <div class="carousel-box__content">
               <div class="carousel-box__item-container">
-                <div class="carousel-box__item">
+                <div class="carousel-box__item" id="id-item">
                 <div class="card card--for-box">
                   <i class="card__icon svg-sun-active svg-sun-active-dims"></i>
                   <div class="card__info">

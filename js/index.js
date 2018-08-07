@@ -65,3 +65,10 @@ function varsFactory(id) {
 function toggleSelect(event, id) {
   document.getElementById(`js-select-${id}`).classList.toggle('mobile-select--none')
 }
+
+function scrollByBtn(event, elementIdToScroll, elementIdForScrollValue) {
+  let elementToScroll = document.getElementById(elementIdToScroll);
+  let scrollValue = document.getElementById(elementIdForScrollValue).offsetWidth;
+
+  elementToScroll.scrollLeft += scrollValue;
+}
