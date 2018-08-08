@@ -1,4 +1,6 @@
 'use strict';
+
+let scenariousPage = 0;
 function openModal(event, id) {
   let {accept, cancel, cardForAnimation, cardLeft, cardTop, layout, modal, overlay} = varsFactory(id);
   modal.classList.add('modal--hidden');
@@ -66,9 +68,71 @@ function toggleSelect(event, id) {
   document.getElementById(`js-select-${id}`).classList.toggle('mobile-select--none')
 }
 
-function scrollByBtn(event, elementIdToScroll, elementIdForScrollValue) {
-  let elementToScroll = document.getElementById(elementIdToScroll);
-  let scrollValue = document.getElementById(elementIdForScrollValue).offsetWidth;
+function scrollScenarious(event, elementIdToScroll, scrollableContent, elementsAmount, revert) {
+  if (!revert && scenariousPage > elementsAmount - 2 || revert && scenariousPage < elementsAmount - 2) return;
 
-  elementToScroll.scrollLeft += scrollValue;
+  scrollByBtn(elementIdToScroll, document.getElementById(scrollableContent).offsetWidth / elementsAmount, revert);
+
+  scenariousPage = revert ? scenariousPage - 1 : scenariousPage + 1;
+
+  if (scenariousPage >= elementsAmount - 1) {
+    document.getElementById('js-scenarious-btn-end').classList.remove('svg-arrow-active', 'svg-arrow-active-dims');
+    document.getElementById('js-scenarious-btn-end').classList.add('svg-arrow', 'svg-arrow-dims')
+  } else {
+    document.getElementById('js-scenarious-btn-end').classList.add('svg-arrow-active', 'svg-arrow-active-dims');
+    document.getElementById('js-scenarious-btn-end').classList.remove('svg-arrow', 'svg-arrow-dims')
+  }
+  if (scenariousPage > 0) {
+    document.getElementById('js-scenarious-btn-start').classList.add('svg-arrow-active', 'svg-arrow-active-dims');
+    document.getElementById('js-scenarious-btn-start').classList.remove('svg-arrow', 'svg-arrow-dims')
+  } else {
+    document.getElementById('js-scenarious-btn-start').classList.remove('svg-arrow-active', 'svg-arrow-active-dims');
+    document.getElementById('js-scenarious-btn-start').classList.add('svg-arrow', 'svg-arrow-dims')
+  }
+}
+
+function scrollGadgets(event, elementIdToScroll, revert) {
+  let totalContentWidth = 9 * 220;
+  let elementToScroll = document.getElementById(elementIdToScroll);
+
+  scrollByBtn(elementIdToScroll, 220, revert);
+
+  gadgetsPage = revert ? gadgetsPage - 1 : gadgetsPage + 1;
+
+  if (elementToScroll.scrollLeft + 220 + elementToScroll.offsetWidth >= totalContentWidth) {
+    document.getElementById('js-gadgets-btn-end').classList.remove('svg-arrow-active', 'svg-arrow-active-dims');
+    document.getElementById('js-gadgets-btn-end').classList.add('svg-arrow', 'svg-arrow-dims')
+  } else {
+    document.getElementById('js-gadgets-btn-end').classList.add('svg-arrow-active', 'svg-arrow-active-dims');
+    document.getElementById('js-gadgets-btn-end').classList.remove('svg-arrow', 'svg-arrow-dims')
+  }
+  if (elementToScroll.scrollLeft > 220) {
+    document.getElementById('js-gadgets-btn-start').classList.add('svg-arrow-active', 'svg-arrow-active-dims');
+    document.getElementById('js-gadgets-btn-start').classList.remove('svg-arrow', 'svg-arrow-dims')
+  } else {
+    document.getElementById('js-gadgets-btn-start').classList.remove('svg-arrow-active', 'svg-arrow-active-dims');
+    document.getElementById('js-gadgets-btn-start').classList.add('svg-arrow', 'svg-arrow-dims')
+  }
+}
+
+function scrollByBtn(elementIdToScroll, scrollValue, revert) {
+  let elementToScroll = document.getElementById(elementIdToScroll);
+  let currentScroll = elementToScroll.scrollLeft;
+
+  animate(function (time) {
+    elementToScroll.scrollLeft = revert ? currentScroll - time / (450 / scrollValue) : time / (450 / scrollValue) + currentScroll
+  }, 450);
+}
+
+function animate(draw, duration) {
+  let start = performance.now();
+
+  requestAnimationFrame(function animate(time) {
+    let timePassed = time - start;
+    if (timePassed > duration) timePassed = duration;
+    draw(timePassed);
+    if (timePassed < duration) {
+      requestAnimationFrame(animate);
+    }
+  });
 }

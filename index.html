@@ -80,8 +80,12 @@
       <div class="section-scenarios__header">
         <h2 class="text-header">Избранные сценарии</h2>
         <div class="horizontal-scroll-btns">
-          <button onclick="scrollByBtn(event, 'id-carousel-box__container', 'id-item')" class="horizontal-scroll-btns__item svg-arrow svg-arrow-dims"></button>
-          <button class="horizontal-scroll-btns__item horizontal-scroll-btns__item--rotated svg-arrow-active svg-arrow-active-dims"></button>
+          <button id="js-scenarious-btn-start"
+                  onclick="scrollScenarious(event, 'id-carousel-box__container', 'id-carousel-box__content', 3, true)"
+                  class="horizontal-scroll-btns__item svg-arrow svg-arrow-dims"></button>
+          <button id="js-scenarious-btn-end"
+                  onclick="scrollScenarious(event, 'id-carousel-box__container', 'id-carousel-box__content', 3)"
+                  class="horizontal-scroll-btns__item horizontal-scroll-btns__item--rotated svg-arrow-active svg-arrow-active-dims"></button>
         </div>
       </div>
       <div class="section-scenarios__content" id="id-section-scenarios">
@@ -204,7 +208,7 @@
         </div>
         <div class="carousel-box">
           <div class="carousel-box__container" id="id-carousel-box__container">
-            <div class="carousel-box__content">
+            <div class="carousel-box__content" id="id-carousel-box__content">
               <div class="carousel-box__item-container">
                 <div class="carousel-box__item" id="id-item">
                 <div class="card card--for-box">
@@ -265,66 +269,125 @@
                 </div>
               </div>
               </div>
-              <div style="display: inline-block; width: calc(50vw - 10px)">
+              <div class="carousel-box__item-container">
                 <div class="carousel-box__item">
-
-              <div class="card card--for-box">
-                <i class="card__icon svg-sun-active svg-sun-active-dims"></i>
-                <div class="card__info">
-                  <div class="card__header">Выключить весь свет в доме и во дворе</div>
+                <div class="card card--for-box">
+                  <i class="card__icon svg-sun-active svg-sun-active-dims"></i>
+                  <div class="card__info">
+                    <div class="card__header">Выключить весь свет в доме и во дворе</div>
+                  </div>
+                </div>
+                <div class="card card--for-box">
+                  <i class="card__icon svg-time svg-time-dims"></i>
+                  <div class="card__info">
+                    <div class="card__header">Я ухожу</div>
+                  </div>
+                </div>
+                <div class="card card--for-box">
+                  <i class="card__icon svg-sun-active svg-sun-active-dims"></i>
+                  <div class="card__info">
+                    <div class="card__header">Включить свет в коридоре</div>
+                  </div>
+                </div>
+                <div class="card card--for-box">
+                  <i class="card__icon svg-temperature-active svg-temperature-active-dims"></i>
+                  <div class="card__info">
+                    <div class="card__header">Набрать горячую ванну</div>
+                    <div class="card__message">Начнётся в 18:00</div>
+                  </div>
+                </div>
+                <div class="card card--for-box">
+                  <i class="card__icon svg-temperature-active svg-temperature-active-dims"></i>
+                  <div class="card__info">
+                    <div class="card__header">Сделать пол тёплым во всей квартире</div>
+                  </div>
+                </div>
+                <div class="card card--for-box">
+                  <i class="card__icon svg-time svg-time-dims"></i>
+                  <div class="card__info">
+                    <div class="card__header">Я ухожу</div>
+                  </div>
+                </div>
+                <div class="card card--for-box">
+                  <i class="card__icon svg-sun-active svg-sun-active-dims"></i>
+                  <div class="card__info">
+                    <div class="card__header">Включить свет в коридоре</div>
+                  </div>
+                </div>
+                <div class="card card--for-box">
+                  <i class="card__icon svg-temperature-active svg-temperature-active-dims"></i>
+                  <div class="card__info">
+                    <div class="card__header">Набрать горячую ванну</div>
+                    <div class="card__message">Начнётся в 18:00</div>
+                  </div>
+                </div>
+                <div class="card card--for-box">
+                  <i class="card__icon svg-temperature-active svg-temperature-active-dims"></i>
+                  <div class="card__info">
+                    <div class="card__header">Сделать пол тёплым во всей квартире</div>
+                  </div>
                 </div>
               </div>
-              <div class="card card--for-box">
-                <i class="card__icon svg-time svg-time-dims"></i>
-                <div class="card__info">
-                  <div class="card__header">Я ухожу</div>
+              </div>
+              <div class="carousel-box__item-container">
+                <div class="carousel-box__item">
+                <div class="card card--for-box">
+                  <i class="card__icon svg-sun-active svg-sun-active-dims"></i>
+                  <div class="card__info">
+                    <div class="card__header">Выключить весь свет в доме и во дворе</div>
+                  </div>
+                </div>
+                <div class="card card--for-box">
+                  <i class="card__icon svg-time svg-time-dims"></i>
+                  <div class="card__info">
+                    <div class="card__header">Я ухожу</div>
+                  </div>
+                </div>
+                <div class="card card--for-box">
+                  <i class="card__icon svg-sun-active svg-sun-active-dims"></i>
+                  <div class="card__info">
+                    <div class="card__header">Включить свет в коридоре</div>
+                  </div>
+                </div>
+                <div class="card card--for-box">
+                  <i class="card__icon svg-temperature-active svg-temperature-active-dims"></i>
+                  <div class="card__info">
+                    <div class="card__header">Набрать горячую ванну</div>
+                    <div class="card__message">Начнётся в 18:00</div>
+                  </div>
+                </div>
+                <div class="card card--for-box">
+                  <i class="card__icon svg-temperature-active svg-temperature-active-dims"></i>
+                  <div class="card__info">
+                    <div class="card__header">Сделать пол тёплым во всей квартире</div>
+                  </div>
+                </div>
+                <div class="card card--for-box">
+                  <i class="card__icon svg-time svg-time-dims"></i>
+                  <div class="card__info">
+                    <div class="card__header">Я ухожу</div>
+                  </div>
+                </div>
+                <div class="card card--for-box">
+                  <i class="card__icon svg-sun-active svg-sun-active-dims"></i>
+                  <div class="card__info">
+                    <div class="card__header">Включить свет в коридоре</div>
+                  </div>
+                </div>
+                <div class="card card--for-box">
+                  <i class="card__icon svg-temperature-active svg-temperature-active-dims"></i>
+                  <div class="card__info">
+                    <div class="card__header">Набрать горячую ванну</div>
+                    <div class="card__message">Начнётся в 18:00</div>
+                  </div>
+                </div>
+                <div class="card card--for-box">
+                  <i class="card__icon svg-temperature-active svg-temperature-active-dims"></i>
+                  <div class="card__info">
+                    <div class="card__header">Сделать пол тёплым во всей квартире</div>
+                  </div>
                 </div>
               </div>
-              <div class="card card--for-box">
-                <i class="card__icon svg-sun-active svg-sun-active-dims"></i>
-                <div class="card__info">
-                  <div class="card__header">Включить свет в коридоре</div>
-                </div>
-              </div>
-              <div class="card card--for-box">
-                <i class="card__icon svg-temperature-active svg-temperature-active-dims"></i>
-                <div class="card__info">
-                  <div class="card__header">Набрать горячую ванну</div>
-                  <div class="card__message">Начнётся в 18:00</div>
-                </div>
-              </div>
-              <div class="card card--for-box">
-                <i class="card__icon svg-temperature-active svg-temperature-active-dims"></i>
-                <div class="card__info">
-                  <div class="card__header">Сделать пол тёплым во всей квартире</div>
-                </div>
-              </div>
-              <div class="card card--for-box">
-                <i class="card__icon svg-time svg-time-dims"></i>
-                <div class="card__info">
-                  <div class="card__header">Я ухожу</div>
-                </div>
-              </div>
-              <div class="card card--for-box">
-                <i class="card__icon svg-sun-active svg-sun-active-dims"></i>
-                <div class="card__info">
-                  <div class="card__header">Включить свет в коридоре</div>
-                </div>
-              </div>
-              <div class="card card--for-box">
-                <i class="card__icon svg-temperature-active svg-temperature-active-dims"></i>
-                <div class="card__info">
-                  <div class="card__header">Набрать горячую ванну</div>
-                  <div class="card__message">Начнётся в 18:00</div>
-                </div>
-              </div>
-              <div class="card card--for-box">
-                <i class="card__icon svg-temperature-active svg-temperature-active-dims"></i>
-                <div class="card__info">
-                  <div class="card__header">Сделать пол тёплым во всей квартире</div>
-                </div>
-              </div>
-            </div>
               </div>
             </div>
           </div>
@@ -346,14 +409,18 @@
           <i class="svg-arrow-down svg-arrow-down-dims tag__icon"></i>
         </div>
         <div class="section-gadgets__scroll-btns horizontal-scroll-btns">
-          <button class="horizontal-scroll-btns__item svg-arrow svg-arrow-dims"></button>
-          <button class="horizontal-scroll-btns__item horizontal-scroll-btns__item--rotated svg-arrow-active svg-arrow-active-dims"></button>
+          <button id="js-gadgets-btn-start"
+                  onclick="scrollGadgets(event, 'js-carousel__container', true)"
+                  class="horizontal-scroll-btns__item svg-arrow svg-arrow-dims"></button>
+          <button id="js-gadgets-btn-end"
+                  onclick="scrollGadgets(event, 'js-carousel__container')"
+                  class="horizontal-scroll-btns__item horizontal-scroll-btns__item--rotated svg-arrow-active svg-arrow-active-dims"></button>
         </div>
       </div>
       <div>
         <div class="carousel">
-          <div class="carousel__container">
-            <div class="carousel__content">
+          <div id="js-carousel__container" class="carousel__container">
+            <div id="js-carousel__content" class="carousel__content">
               <div id="js-card-id-1" class="card card--tall" onclick="openModal(event, '1')">
                 <i class="card__icon svg-temperature-active svg-temperature-active-dims"></i>
                 <div class="card__info">
@@ -395,6 +462,20 @@
                 <div class="card__info">
                   <div class="card__header">Philips Zhirui</div>
                   <div class="card__message">Выключено</div>
+                </div>
+              </div>
+              <div class="card card--tall">
+                <span class="card__icon svg-sun-active svg-sun-active-dims"></span>
+                <div class="card__info">
+                  <div class="card__header">Xiaomi Mi Air Purifier 2S</div>
+                  <div class="card__message">Включено</div>
+                </div>
+              </div>
+              <div class="card card--tall">
+                <span class="card__icon svg-sun-active svg-sun-active-dims"></span>
+                <div class="card__info">
+                  <div class="card__header">Xiaomi Mi Air Purifier 2S</div>
+                  <div class="card__message">Включено</div>
                 </div>
               </div>
               <div class="card card--tall">
