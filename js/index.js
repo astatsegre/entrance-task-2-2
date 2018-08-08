@@ -97,8 +97,6 @@ function scrollGadgets(event, elementIdToScroll, revert) {
 
   scrollByBtn(elementIdToScroll, 220, revert);
 
-  gadgetsPage = revert ? gadgetsPage - 1 : gadgetsPage + 1;
-
   if (elementToScroll.scrollLeft + 220 + elementToScroll.offsetWidth >= totalContentWidth) {
     document.getElementById('js-gadgets-btn-end').classList.remove('svg-arrow-active', 'svg-arrow-active-dims');
     document.getElementById('js-gadgets-btn-end').classList.add('svg-arrow', 'svg-arrow-dims')
@@ -135,4 +133,10 @@ function animate(draw, duration) {
       requestAnimationFrame(animate);
     }
   });
+}
+
+function sectionMainScroll() {
+  let arrow = document.getElementById('js-vertical-arrow');
+  arrow.classList.remove('card__icon--double-arrow', 'svg-double-arrow', 'svg-double-arrow-dims')
+  arrow.classList.add('svg-temperature', 'svg-temperature-dims')
 }
