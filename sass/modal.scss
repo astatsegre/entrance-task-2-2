@@ -1,5 +1,5 @@
 .modal {
-  @include animation('background-color left top height width');
+  @include animation('left top height width');
   position: fixed;
   top: 20px;
   left: 20px;
@@ -120,7 +120,6 @@
   }
 
   &__btn {
-    @include animation('visibility');
     width: calc(100vw - 40px);
     height: 60px;
     position: fixed;
@@ -159,7 +158,6 @@
 }
 
 .overlay {
-  @include animation('background-color');
   position: fixed;
   top: 0;
   left: 0;
@@ -169,6 +167,5 @@
 }
 
 .gaussian {
-  @include animation('filter');
   filter: blur(2px);
 }
