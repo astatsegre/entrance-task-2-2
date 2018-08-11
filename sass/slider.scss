@@ -47,6 +47,7 @@
     border: 3px solid rgba(51,51,51,0.1);
     box-shadow: 0 0 0 4px white;
     border-radius: 50%;
+    background: none;
   }
 
   &::-moz-range-thumb {
@@ -60,6 +61,10 @@
   }
   &::-moz-range-track {
     background: none;
+  }
+  &::-ms-track {
+    width: 0;
+    height: 0;
   }
 
   @media (min-width: $screen-s) {
