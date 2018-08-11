@@ -2,6 +2,10 @@ html, body {
   height: 100%;
 }
 
+.restrict-scroll {
+  overflow: hidden;
+}
+
 body {
   margin: 0;
 }
