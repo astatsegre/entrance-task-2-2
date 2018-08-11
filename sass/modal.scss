@@ -109,6 +109,7 @@
     padding-bottom: 50px;
     padding-left: 20px;
     overflow-x: scroll;
+    overflow-y: hidden;
 
     @media (min-width: $screen-s) {
       padding-left: 25px;
