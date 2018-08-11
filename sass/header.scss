@@ -7,7 +7,7 @@
   position: fixed;
   width: calc(100vw - 40px);
   background-color: white;
-  z-index: 99999;
+  z-index: 999;
 
   @media (min-width: $screen-m) {
     justify-content: flex-start;
