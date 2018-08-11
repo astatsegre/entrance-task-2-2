@@ -1,8 +1,7 @@
 .round-slider {
-  width: 200px;
-  height: 200px;
+  width: 220px;
+  height: 220px;
   position: relative;
-  outline: 1px solid green;
 
   &__controller {
     width: 178px;
@@ -11,14 +10,34 @@
     box-shadow: 0 2px 4px 0;
     text-align: center;
     position: absolute;
-    top: 13px;
-    left: 11px;
+    top: 20px;
+    left: 20px;
     z-index: 50;
     background-color: white;
 
     @media (min-width: $screen-s) {
       margin-top: 0;
     }
+
+    &--arrow-container {
+      box-shadow: none;
+      z-index: 60;
+      background-color: unset;
+      text-align: end;
+      transform: rotate(60deg);
+    }
+  }
+
+  &__arrow {
+    transform: rotate(90deg);
+    display: inline-block;
+
+  }
+  &__icon-container {
+    position: absolute;
+    top: calc(50% - 9px);
+    left: 50%;
+    width: 50%;
   }
 
   &__temperature {
@@ -39,7 +58,7 @@
 
     @for $i from 1 through 100 {
       &--#{$i} {
-        transform: rotate(45deg - ($i * 3));
+        transform: rotate(60deg - ($i * 3));
       }
     }
   }
