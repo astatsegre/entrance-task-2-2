@@ -1,19 +1,46 @@
 .round-slider {
-  width: 178px;
-  height: 178px;
-  border-radius: 50%;
-  box-shadow: 0 2px 4px 0;
-  text-align: center;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  outline: 1px solid green;
 
-  @media (min-width: $screen-s) {
-    top: 120px;
-    margin-top: 0;
+  &__controller {
+    width: 178px;
+    height: 178px;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px 0;
+    text-align: center;
+    position: absolute;
+    top: 13px;
+    left: 11px;
+    z-index: 50;
+    background-color: white;
+
+    @media (min-width: $screen-s) {
+      margin-top: 0;
+    }
   }
 
-    &__temperature {
+  &__temperature {
     display: inline-block;
     margin-top: 50px;
     font-family: $font-family-bold;
     font-size: $font-size-xxxl;
+  }
+
+  &__item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 1px;
+    background-color: $color-accent-light;
+    transform-origin: bottom left;
+
+    @for $i from 1 through 100 {
+      &--#{$i} {
+        transform: rotate(45deg - ($i * 3));
+      }
+    }
   }
 }
