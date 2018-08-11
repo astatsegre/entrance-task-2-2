@@ -3,49 +3,55 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
+  height: 55px;
+  position: fixed;
+  width: calc(100vw - 40px);
+  background-color: white;
+  z-index: 99999;
 
   @media (min-width: $screen-m) {
     justify-content: flex-start;
     border-bottom: 1px solid #F0F0F0;
     padding: 0 40px;
+    height: 92px;
+    width: calc(100vw - 80px);
   }
 
-  .header-logo{
+  &__logo {
     margin-right: 52px;
   }
+}
 
-  .main-nav {
-    display: none;
-    @include clear-ul();
+.main-nav {
+  display: none;
+  @include clear-ul();
 
-    &__item {
-      display: inline;
-      margin-right: 13px;
-    }
+  &__item {
+    display: inline;
+    margin-right: 13px;
+  }
 
-    &__link {
-      font-family: $font-family-bold;
-      text-decoration: none;
-      color: $text-color-main;
-      opacity: 0.6;
-      font-size: 16px;
-      line-height: 20px;
+  &__link {
+    font-family: $font-family-bold;
+    text-decoration: none;
+    color: $text-color-main;
+    opacity: 0.6;
+    font-size: 16px;
+    line-height: 20px;
 
-      &--active {
-        opacity: 1;
-        pointer-events: none;
-      }
-    }
-
-    @media (min-width: $screen-m) {
-      display: block;
+    &--active {
+      opacity: 1;
+      pointer-events: none;
     }
   }
 
-  .main-nav-open-btn {
+  @media (min-width: $screen-m) {
+    display: block;
+  }
+
+  &__open-btn {
     @media (min-width: $screen-m) {
       display: none;
     }
   }
 }
-

@@ -10,7 +10,7 @@
 <body>
 <div id="js-layout" class="layout">
   <header class="header">
-    <a class="svg-logo svg-logo-dims header-logo" href="https://yandex.ru" title="Яндекс Дом"></a>
+    <a class="svg-logo svg-logo-dims header__logo" href="https://yandex.ru" title="Яндекс Дом"></a>
     <nav>
       <ul class="main-nav">
         <li class="main-nav__item">
@@ -24,8 +24,9 @@
         </li>
       </ul>
     </nav>
-    <i onclick="toggleSelect(event, '2')" class="main-nav-open-btn svg-burger svg-burger-dims"></i>
+    <i onclick="toggleSelect(event, '2')" class="main-nav__open-btn svg-burger svg-burger-dims"></i>
   </header>
+  <div class="header-placeholder"></div>
   <main class="content">
     <section class="section-main">
       <h2 class="text-header section-main__header">Главное</h2>
