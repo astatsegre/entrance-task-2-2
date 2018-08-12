@@ -25,6 +25,11 @@
     overflow-y: hidden;
     max-height: 150px;
     padding-bottom: 55px;
+    -webkit-overflow-scrolling: touch;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
 
     &--tall {
       @media (min-width: $screen-m) {
@@ -35,6 +40,11 @@
         overflow-y: scroll;
         width: 200px;
         padding-right: 50px;
+        -webkit-overflow-scrolling: touch;
+
+        &::-webkit-scrollbar {
+          display: none;
+        }
       }
     }
   }

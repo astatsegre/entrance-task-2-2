@@ -13,8 +13,6 @@ window.addEventListener('resize', () => {
 
 let scenariousPage = 0;
 function openModal(event, id) {
-  document.documentElement.classList.add('restrict-scroll');
-  document.body.classList.add('restrict-scroll');
   let {accept, cancel, cardForAnimation, cardLeft, cardTop, layout, modal, overlay} = varsFactory(id);
   modal.classList.add('modal--hidden');
   modal.classList.remove('modal--none');
@@ -42,8 +40,6 @@ function openModal(event, id) {
 }
 
 function closeModal(event, id) {
-  document.documentElement.classList.remove('restrict-scroll');
-  document.body.classList.remove('restrict-scroll');
   let {accept, cancel, cardBackgroundColor, cardForAnimation, cardLeft, cardTop, layout, modal, overlay} = varsFactory(id);
 
   cardForAnimation.classList.add('modal');
