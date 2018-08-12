@@ -51,6 +51,7 @@
   &__temperature {
     font-family: $font-family-bold;
     font-size: $font-size-xxl;
+    vertical-align: top;
   }
 
   &__temperature-logo {
@@ -84,6 +85,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 
     @media (min-width: $screen-s) {
       flex-direction: row;
