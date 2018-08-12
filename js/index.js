@@ -6,14 +6,40 @@ window.onload = () => {
   if (window.innerWidth <= 1300) {
     sectionMainScroll()
   }
+
+  //round-slider handler
+  let roundSlider = document.getElementById('js-round-slider');
+  let roundSliderController = document.getElementById('js-round-slider-controller');
+  let moveHandle = (e) => {
+    let roundSliderBox = roundSliderController.getBoundingClientRect();
+    let centerX = roundSliderBox.left + 89;
+    let centerY = roundSliderBox.top + 89;
+    let radians = Math.atan2((e.clientX ? e.clientX : e.touches[0].clientX) - centerX, (e.clientY ? e.clientY : e.touches[0].clientY) - centerY);
+    let degree = (radians * (180 / Math.PI * -1) + 90);
+    if (degree > 60 && degree < 90) degree = 60;
+    if (degree > 90 && degree < 118) degree = 117;
+    roundSlider.style.transform = "rotate("+ degree +"deg)";
+  };
+  roundSlider.addEventListener('mousedown', () => {
+    roundSlider.addEventListener('mousemove', moveHandle)
+  });
+  roundSlider.addEventListener('touchstart', () => {
+    roundSlider.addEventListener('touchmove', moveHandle)
+  });
+  roundSlider.addEventListener('mouseup', () => {
+    roundSlider.removeEventListener('mousemove', moveHandle)
+  });
+  roundSlider.addEventListener('touchend', () => {
+    roundSlider.removeEventListener('touchmove', moveHandle)
+  })
 };
 
+// для модальных окон в мобильных браузерах, когда может меняться vh
 window.addEventListener('resize', () => {
   let vh = window.innerHeight * 0.01;
   document.documentElement.style.setProperty('--vh', `${vh}px`);
 });
 
-let scenariousPage = 0;
 function openModal(event, id) {
   let {accept, cancel, cardForAnimation, cardLeft, cardTop, layout, modal, overlay} = varsFactory(id);
   modal.classList.add('modal--hidden');
@@ -81,6 +107,7 @@ function toggleSelect(event, id) {
   document.getElementById(`js-select-${id}`).classList.toggle('mobile-select--none')
 }
 
+let scenariousPage = 0;
 function scrollScenarious(event, elementIdToScroll, scrollableContent, elementsAmount, revert) {
   if (!revert && scenariousPage > elementsAmount - 2 || revert && scenariousPage < elementsAmount - 2) return;
 
