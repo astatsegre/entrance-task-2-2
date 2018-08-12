@@ -12,6 +12,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
+    padding: 2px;
     min-width: calc(50vw - 10px);
   }
   &__item-container {

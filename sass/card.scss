@@ -7,6 +7,15 @@
   height: 100px;
   cursor: pointer;
 
+  &:hover {
+    background-color: white;
+    box-shadow: 0 2px 6px 0 $background-color
+  }
+
+  &:active {
+    background-color: #EBEBEB;
+  }
+
   &--tall {
     height: 120px;
   }
@@ -21,7 +30,7 @@
   }
 
   &--for-box {
-    margin: 0 15px 15px 0;
+    margin: 0 13px 13px 0;
     flex: 1 1 180px;
     min-width: unset;
     max-width: 450px;

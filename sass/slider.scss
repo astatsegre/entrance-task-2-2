@@ -1,5 +1,4 @@
 .slider-row {
-  //position: relative;
   border-radius: 35px;
   -webkit-appearance: none;
   appearance: none;
@@ -9,34 +8,6 @@
   outline: none;
   transform: rotate(-90deg);
   margin-top: 25px;
-
-  /*&::after {
-    position: absolute;
-    transform: rotate(90deg);
-    top: 33%;
-    right: 15px;
-    content: "+30";
-    color: white;
-    font-family: $font-family-bold;
-    font-size: $font-size-m;
-    @media (min-width: $screen-s) {
-      transform: none;
-    }
-  }
-
-  &::before {
-    position: absolute;
-    transform: rotate(90deg);
-    bottom: 30%;
-    left: 15px;
-    content: "-10";
-    color: white;
-    font-family: $font-family-bold;
-    font-size: $font-size-m;
-    @media (min-width: $screen-s) {
-      transform: none;
-    }
-  }*/
 
   &::-webkit-slider-thumb {
     -webkit-appearance: none;
@@ -76,25 +47,6 @@
 
   &--light {
     background: linear-gradient(-90deg, #FFB100, #FFEC85);
-
-   /* &::before {
-      @extend %svg-common;
-      background-position: 74.33333333333333% 21.643243243243244%;
-      width: 38px;
-      height: 38px;
-      content: ' ';
-      display: block;
-      bottom: 18%;
-    }
-    &::after {
-      @extend %svg-common;
-      background-position: 87% 21.643243243243244%;
-      width: 38px;
-      height: 38px;
-      content: ' ';
-      display: block;
-      top: 18%;
-    }*/
   }
 
   &__max-icon {

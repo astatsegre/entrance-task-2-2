@@ -133,6 +133,9 @@
     font-size: $font-size-m;
     font-family: $font-family-bold;
     z-index: 99999;
+    &:hover {
+      background-color: $background-color;
+    }
 
     @media (min-width: $screen-s) {
       top: 464px;
@@ -142,6 +145,9 @@
     &--accent {
     bottom: 95px;
     background-color: $color-accent;
+    &:hover {
+      background-color: $btn-color-active-hover;
+    }
       @media (min-width: $screen-s) {
         left: calc(50% - 315px);
       }
