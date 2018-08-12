@@ -3,6 +3,7 @@
   -webkit-appearance: none;
   appearance: none;
   width: calc(100vh - 350px);
+  height: calc(var(--vh, 1vh) * 100 - 350px);
   height: 60px;
   background: linear-gradient(-90deg, #FF5B00, #FFD800, #0085FF);
   outline: none;
