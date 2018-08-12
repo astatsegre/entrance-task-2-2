@@ -84,7 +84,7 @@ function toggleSelect(event, id) {
 function scrollScenarious(event, elementIdToScroll, scrollableContent, elementsAmount, revert) {
   if (!revert && scenariousPage > elementsAmount - 2 || revert && scenariousPage < elementsAmount - 2) return;
 
-  scrollByBtn(elementIdToScroll, document.getElementById(scrollableContent).offsetWidth / elementsAmount, revert);
+  scrollByBtn(elementIdToScroll, document.getElementById(scrollableContent).offsetWidth, revert);
 
   scenariousPage = revert ? scenariousPage - 1 : scenariousPage + 1;
 
