@@ -7,7 +7,6 @@
     box-sizing: content-box;
     padding-left: 20px;
     padding-top: 5px;
-    touch-action: pan-x;
 
     @media (min-width: $screen-m) {
       padding-left: 40px;
@@ -16,7 +15,6 @@
     &--tall {
       @media (min-width: $screen-m) {
         flex-direction: column;
-        touch-action: pan-y;
         padding-left: 0;
         width: 200px;
       }
