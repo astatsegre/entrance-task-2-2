@@ -18,6 +18,13 @@ window.onload = () => {
     let degree = (radians * (180 / Math.PI * -1) + 90);
     if (degree > 60 && degree < 90) degree = 60;
     if (degree > 90 && degree < 118) degree = 117;
+    let activeNumber = degree <= 60 ? Math.round((degree + 360 - 117) / 3): Math.round((degree - 117) / 3)
+    for (let i = 0; i < activeNumber; i++) {
+      document.querySelector(`.round-slider__item--${100 - i}`).classList.add('round-slider__item--active')
+    }
+    for (let i = activeNumber; i < 100; i++) {
+      document.querySelector(`.round-slider__item--${100 - i}`).classList.remove('round-slider__item--active')
+    }
     roundSlider.style.transform = "rotate("+ degree +"deg)";
   };
   roundSlider.addEventListener('mousedown', () => {

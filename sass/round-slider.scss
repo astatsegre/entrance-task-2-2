@@ -24,7 +24,7 @@
       z-index: 60;
       background-color: unset;
       text-align: end;
-      transform: rotate(60deg);
+      transform: rotate(117deg);
     }
   }
 
@@ -53,13 +53,17 @@
     left: 50%;
     width: 50%;
     height: 1px;
-    background-color: $color-accent-light;
+    background-color: $text-color-alternative;
     transform-origin: bottom left;
 
     @for $i from 1 through 100 {
       &--#{$i} {
         transform: rotate(60deg - ($i * 3));
       }
+    }
+
+    &--active {
+      background-color: $color-accent-light;
     }
   }
 }
