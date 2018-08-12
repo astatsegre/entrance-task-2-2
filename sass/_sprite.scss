@@ -1,0 +1,194 @@
+%svg-common {
+	background: url("../images/svg/_sprite-721f7238.svg") no-repeat;
+}
+
+.svg-arrow {
+	@extend %svg-common;
+	background-position: 41.891891891891895% 91.7593984962406%;
+}
+
+.svg-arrow-dims {
+	width: 11px;
+	height: 16px;
+}
+
+.svg-arrow-active {
+	@extend %svg-common;
+	background-position: 97.29729729729729% 63.18796992481203%;
+}
+
+.svg-arrow-active-dims {
+	width: 11px;
+	height: 16px;
+}
+
+.svg-arrow-down {
+	@extend %svg-common;
+	background-position: 49.32432432432432% 91.7593984962406%;
+}
+
+.svg-arrow-down-dims {
+	width: 11px;
+	height: 16px;
+}
+
+.svg-burger {
+	@extend %svg-common;
+	background-position: 62.4113475177305% 49.65413533834586%;
+}
+
+.svg-burger-dims {
+	width: 18px;
+	height: 16px;
+}
+
+.svg-cloud-drizzle {
+	@extend %svg-common;
+	background-position: 29.00763358778626% 69.45454545454545%;
+}
+
+.svg-cloud-drizzle-dims {
+	width: 28px;
+	height: 28px;
+}
+
+.svg-delete {
+	@extend %svg-common;
+	background-position: 31.20567375886525% 93.16030534351145%;
+}
+
+.svg-delete-dims {
+	width: 18px;
+	height: 18px;
+}
+
+.svg-double-arrow {
+	@extend %svg-common;
+	background-position: 18.43971631205674% 93.16030534351145%;
+}
+
+.svg-double-arrow-dims {
+	width: 18px;
+	height: 18px;
+}
+
+.svg-logo {
+	@extend %svg-common;
+	background-position: 0 0;
+}
+
+.svg-logo-dims {
+	width: 114.88px;
+	height: 40.04px;
+}
+
+.svg-sun {
+	@extend %svg-common;
+	background-position: 69.17293233082707% 68.32520325203252%;
+}
+
+.svg-sun-dims {
+	width: 26px;
+	height: 26px;
+}
+
+.svg-sun-active {
+	@extend %svg-common;
+	background-position: 49.62406015037594% 68.32520325203252%;
+}
+
+.svg-sun-active-dims {
+	width: 26px;
+	height: 26px;
+}
+
+.svg-sun-big {
+	@extend %svg-common;
+	background-position: 0 38.13333333333333%;
+}
+
+.svg-sun-big-dims {
+	width: 44px;
+	height: 44px;
+}
+
+.svg-sun-white {
+	@extend %svg-common;
+	background-position: 94.94214876033058% 39.63963963963964%;
+}
+
+.svg-sun-white-dims {
+	width: 38px;
+	height: 38px;
+}
+
+.svg-sun-white-bold {
+	@extend %svg-common;
+	background-position: 0 75.71171171171171%;
+}
+
+.svg-sun-white-bold-dims {
+	width: 38px;
+	height: 38px;
+}
+
+.svg-temperature {
+	@extend %svg-common;
+	background-position: 88.7218045112782% 68.32520325203252%;
+}
+
+.svg-temperature-dims {
+	width: 26px;
+	height: 26px;
+}
+
+.svg-temperature-active {
+	@extend %svg-common;
+	background-position: 66.16541353383458% 32.552845528455286%;
+}
+
+.svg-temperature-active-dims {
+	width: 26px;
+	height: 26px;
+}
+
+.svg-temperature-active-big {
+	@extend %svg-common;
+	background-position: 99.89565217391305% 0;
+}
+
+.svg-temperature-active-big-dims {
+	width: 44px;
+	height: 44px;
+}
+
+.svg-temperature-big {
+	@extend %svg-common;
+	background-position: 38.26086956521739% 38.13333333333333%;
+}
+
+.svg-temperature-big-dims {
+	width: 44px;
+	height: 44px;
+}
+
+.svg-time {
+	@extend %svg-common;
+	background-position: 0 99.21951219512195%;
+}
+
+.svg-time-dims {
+	width: 26px;
+	height: 26px;
+}
+
+.svg-triangle-arrow {
+	@extend %svg-common;
+	background-position: 99.3103448275862% 71.97122302158273%;
+}
+
+.svg-triangle-arrow-dims {
+	width: 14px;
+	height: 10px;
+}
+
