@@ -23,6 +23,11 @@
     padding: 25px 0;
   }
 
+  @media (max-width: $screen-xs) {
+    height: calc(100vh - 120px);
+    height: calc(var(--vh, 1vh) * 100 - 120px);
+  }
+
   &--short {
     @media (min-width: $screen-s) {
       height: 238px;
@@ -147,14 +152,24 @@
       left: calc(50% + 8px);
       width: 307px;
     }
+    @media (max-width: $screen-xs) {
+      bottom: 20px;
+      right: 20px;
+      left: unset;
+      width: calc(50vw - 30px);
+    }
     &--accent {
     bottom: 95px;
     background-color: $color-accent;
-    &:hover {
-      background-color: $btn-color-active-hover;
-    }
+      &:hover {
+        background-color: $btn-color-active-hover;
+      }
       @media (min-width: $screen-s) {
         left: calc(50% - 315px);
+      }
+      @media (max-width: $screen-xs) {
+        left: 20px;
+        bottom: 20px;
       }
     }
 

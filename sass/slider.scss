@@ -10,6 +10,11 @@
   transform: rotate(-90deg);
   margin-top: 25px;
 
+  @media (max-width: $screen-xs) {
+    width: calc(100vh - 285px);
+    width: calc(var(--vh, 1vh) * 100 - 285px);
+  }
+
   &::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
