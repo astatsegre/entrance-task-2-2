@@ -70,6 +70,10 @@
     &--double-arrow {
       display: none;
       left: 90px;
+
+      @media (min-width: $screen-l) {
+        display: block;
+      }
     }
   }
 
