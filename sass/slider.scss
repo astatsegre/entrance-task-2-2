@@ -18,8 +18,8 @@
   &::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    width: 57px;
-    height: 57px;
+    width: 54px;
+    height: 54px;
     cursor: pointer;
     border: 3px solid rgba(51,51,51,0.1);
     box-shadow: 0 0 0 4px white;
@@ -28,8 +28,8 @@
   }
 
   &::-moz-range-thumb {
-    width: 57px;
-    height: 57px;
+    width: 54px;
+    height: 54px;
     cursor: pointer;
     border: 3px solid rgba(51,51,51,0.1);
     box-shadow: 0 0 0 4px white;

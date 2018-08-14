@@ -90,7 +90,7 @@
   }
 
   &__for-animation {
-    @include animation('background-color left top height width');
+    @include animation('left top height width');
     width: 200px;
     height: 120px;
     background-color: $background-color;
