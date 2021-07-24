@@ -1,6 +1,6 @@
 # entrance-task-2-2
 
-Посмотреть можно тут https://astatsegre.github.io/entrance-task-2-2/
+Посмотреть можно тут https://novitckas.github.io/entrance-task-2-2/
 
 Модальные окна открываются у первых трех плашек в разделе "Избранные устройства"
 
